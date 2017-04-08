@@ -1,0 +1,15 @@
+PODS:
+  - Color-Picker-for-iOS (2.0.2)
+  - JSBadgeView (1.4.1)
+
+DEPENDENCIES:
+  - Color-Picker-for-iOS (~> 2.0)
+  - JSBadgeView (~> 1.4.1)
+
+SPEC CHECKSUMS:
+  Color-Picker-for-iOS: 4980589b3e3cfe7198f227dd50be9adb02d8bc0b
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+
+PODFILE CHECKSUM: 7b3244d1d0ee8252339e3149043159260940932d
+
+COCOAPODS: 1.2.0

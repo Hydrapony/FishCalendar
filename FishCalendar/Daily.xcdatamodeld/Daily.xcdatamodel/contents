@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15F34" minimumToolsVersion="Xcode 4.1" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ClassName" representedClassName="ClassName" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeworkname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="havehomework" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HomeworkType" inverseName="toclassname" inverseEntity="HomeworkType" syncable="YES"/>
+    </entity>
+    <entity name="Daily" representedClassName=".Daily" syncable="YES">
+        <attribute name="enddate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="havedone" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imgname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isdaily" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isvalid" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="DailyLong" representedClassName=".DailyLong" syncable="YES">
+        <attribute name="fromdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="havedone" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imgname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isvalid" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recentdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="todate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="HomeworkType" representedClassName="HomeworkType" syncable="YES">
+        <attribute name="typename" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toclassname" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassName" inverseName="havehomework" inverseEntity="ClassName" syncable="YES"/>
+    </entity>
+    <entity name="Iconimg" representedClassName="Iconimg" syncable="YES">
+        <attribute name="imgname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ClassName" positionX="-173" positionY="-189" width="128" height="120"/>
+        <element name="Daily" positionX="-405" positionY="-117" width="128" height="180"/>
+        <element name="DailyLong" positionX="-29" positionY="-18" width="128" height="163"/>
+        <element name="HomeworkType" positionX="-180" positionY="-18" width="128" height="75"/>
+        <element name="Iconimg" positionX="-306" positionY="81" width="128" height="58"/>
+    </elements>
+</model>
